@@ -1,0 +1,9 @@
+extends ./application.pug
+block content
+  .container
+    h1 All notices
+    hr
+    each notice in notices
+      .card.card-block
+        p(class="card-title")= notices.title
+        p(class="card-title")= notices.body

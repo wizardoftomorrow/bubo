@@ -1,0 +1,14 @@
+extends ../application.pug
+block content
+    .container
+      .row
+        .col-xs-6.col-xs-offset-3
+          h1 Add message to the bulletin board
+          form(action="/add-notice" method="POST")
+            .form-group
+              label(for="title") Title
+              input(name="title" type="text" id="title" class="form-control" placeholder="title")
+          form(action="/add-notice" method="POST")
+            .form-group
+              label(for="body") Body
+              input(name="body" type="text" id="body" class="form-control" placeholder="body")
